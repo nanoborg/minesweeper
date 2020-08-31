@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let isGameOver = false
 
 
-
     // create board
     function createBoard() {
         // get shuffled game array with random bombs
@@ -51,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         } 
 
+        
         // add numbers
         for (let i = 0; i < squares.length; i++) {
             let total = 0
