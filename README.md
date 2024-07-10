@@ -14,7 +14,7 @@ This was a tutorial I had watched on youtube which covers languages such as:
 
 The idea is to click all the squares and not hit a bomb.
 
-A square might return a value giving an indication to where the bomb might be around the square. The value comes from looking at all 8 squares surround a clicked square.
+A square might return a value giving an indication to where the bomb might be around the square. The value comes from looking at all 8 squares surrounding a clicked square.
 
 Right clicking places a flag on the square, do this to all suspected bombs to win the game.
 
