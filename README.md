@@ -34,7 +34,7 @@ In `app.js`
 
 ## Problems
 
-I had some issues trying with the `confirm()` dialogue boxes, this prompt was showing before the squares were be updated with 💣 values.
+I had some issues trying with setting up `confirm()` dialogue boxes, the prompt was showing before the squares were rendered with 💣 values.
 
 Javascript is executes synchronously, meaning that `confirm()` will block the execution of other lines of code till the dialogue is clicked.
 
