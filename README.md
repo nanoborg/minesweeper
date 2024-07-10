@@ -40,4 +40,4 @@ Javascript is executes synchronously, meaning that `confirm()` will block the ex
 
 The work around was to create a `setTimout(() => {}, 10)` function so that `confirm()` is fired after the squares have been rendered with 💣.
 
-- Had some placement issues with the gameboard. I wanted the board to be placed in the centre of the screen. I used `display:grid; place-items: center;` which worked one way but also had to remember to set `height: 100vh` to the parent element and `height: 100%` of the wrapping element for the board.
+- Had some placement issues with the gameboard. I wanted the board to be placed in the centre of the screen. I used `display:grid; place-items: center;` which worked one way but also had to remember to set `height: 100vh` to the parent element (`main`) and `height: 100%` of the wrapping element for the board.
