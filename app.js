@@ -252,7 +252,9 @@ document.addEventListener("DOMContentLoaded", () => {
         match++;
       }
       if (match === bombAmount) {
-        prompt("YOU WIN!");
+        setTimeout(() => {
+          prompt("YOU WIN!");
+        }, 10);
         isGameOver = true;
       }
     }

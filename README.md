@@ -1,6 +1,6 @@
 # Minesweeper
 
-### Try here 👉 [Minesweeper](https://nanoborg.github.io/wdi-fundamentals-memorygame/)
+### Try here 👉 [Minesweeper](https://nanoborg.github.io/minesweeper/)
 
 ## Intention
 
@@ -24,10 +24,16 @@ The way the code is designed is to use **HTML** to create a basic layout and hav
 
 In `app.js`
 
-## Problems
-
 ## Extended Features
 
 - I created a new function which creates a button, upon clicking this button it will reload the page using `location.reload()`
 
-- Created a `confirm()` dialogue pop-up to let the player know when they have won or lost the game.
+- Created a dialogue pop-up to let the player know when they have won or lost the game using `confirm("BOOM! Game Over")` and confirm("BOOM! Game Over")
+
+## Problems
+
+I had some issues trying with the `confirm()` dialogue boxes, this prompt was showing before the squares were be updated with 💣 values.
+
+Javascript is executes synchronously, meaning that `confirm()` will block the execution of other lines of code till the dialogue is clicked.
+
+The work around was to create a `setTimout(() => {}, 10)` function so that `confirm()` is fired after the squares have been rendered with 💣.
