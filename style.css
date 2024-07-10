@@ -1,58 +1,79 @@
+body {
+  height: 100vh;
+  margin: 0; /* Ensure no default margin from the body */
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100%; /* Ensure the main element takes the full height of the body */
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
 .grid {
-    height: 400px;
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: grey;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
 }
 
 .grid div {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
+  margin: 0;
 }
 
 .checked {
-    height: 40px;
-    width: 40px;
-    border: 2px solid;
-    background-color: #cecab7;
-    border-color: #9c998d;
-    box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  border: 2px solid;
+  background-color: #cecab7;
+  border-color: #9c998d;
+  box-sizing: border-box;
 }
 
 .bomb {
-    /* background-color: orange; */
-    height: 40px;
-    width: 40px;
-    border: 5px solid;
-    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-    box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  border: 5px solid;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  box-sizing: border-box;
+}
+
+.flag {
+  text-align: center;
 }
 
 .valid {
-    height: 40px;
-    width: 40px;
-    border: 5px solid;
-    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
-    box-sizing: border-box;
+  height: 40px;
+  width: 40px;
+  border: 5px solid;
+  border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+  box-sizing: border-box;
 }
 
-.valid:hover, .bomb:hover {
-    border-color: #f5f3eb8a #bab7a98a #bab7a98a #fff9db8a;
+.valid:hover,
+.bomb:hover {
+  border-color: #f5f3eb8a #bab7a98a #bab7a98a #fff9db8a;
 }
 
 .one {
-    color: #e76346;
-    }
-  
+  color: #e76346;
+}
+
 .two {
-    color: #4199d3;
+  color: #4199d3;
 }
-  
+
 .three {
-    color: #409242;
+  color: #409242;
 }
-  
+
 .four {
-    color: #bb41d3;
+  color: #bb41d3;
 }
