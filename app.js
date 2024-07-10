@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 click(square)
             })
 
-            // cntrl and left click
+            // left click function
             // square.oncontextmenu = function(e) {
             //     e.preventDefault()
             //     addFlag(square)
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         } 
 
-        
+
         // add numbers
         for (let i = 0; i < squares.length; i++) {
             let total = 0
@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (i < 89 && squares[i +width].classList.contains('bomb')) total ++
                 
                 squares[i].setAttribute('data', total)
+                
                 // console.log(squares[i])
             }
         }
@@ -109,13 +110,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+ 
+    function totalInWords(total) {
+        const numberToWords = {
+            1: "one",
+            2: "two",
+            3: "three",
+            4: "four"
+        }
+        
+        keysArray = Object.keys(numberToWords)
+
+        const match = keysArray.filter(key => total === key)
+        
+        return numberToWords[Number(match)]
+        
+    }
 
 
     // click on square actions
     function click(square) {
         let currentId = square.id
 
-        // no action if gameover is true
+        // no action if game over is true
         if (isGameOver) return 
 
         // check for already checked or flag
@@ -131,6 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (total != 0) {
                 square.classList.add('checked')
                 square.innerHTML = total
+                square.classList.add(totalInWords(total))
                 return
             }
 
