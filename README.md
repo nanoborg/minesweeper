@@ -28,7 +28,9 @@ In `app.js`
 
 - I created a new function which creates a button, upon clicking this button it will reload the page using `location.reload()`
 
-- Created a dialogue pop-up to let the player know when they have won or lost the game using `confirm("BOOM! Game Over")` and confirm("BOOM! Game Over")
+- Created a dialogue pop-up to let the player know when they have won or lost the game using `confirm("BOOM! Game Over")` and `confirm("BOOM! Game Over")`
+
+- Game over resets the board.
 
 ## Problems
 

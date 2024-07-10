@@ -237,7 +237,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     setTimeout(() => {
-      confirm("BOOM! Game Over");
+      if (confirm("BOOM! Game Over")) {
+        location.reload();
+      }
     }, 10);
   }
 
